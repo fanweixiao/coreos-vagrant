@@ -3,11 +3,11 @@
 This repo provides a template Vagrantfile to create a CoreOS virtual machine using the VirtualBox software hypervisor.
 After setup is complete you will have a single CoreOS virtual machine running on your local machine.
 
-## Whats-Added-In-This-Fork
+## >>>>Painless in China<<<<
 
 This fork added support on specific docker registry mirror for accelerating `docker pull` command. 
 
-If you are in China, I strongly suggest take a look at [专享Docker加速器daocloud.io](https://www.daocloud.io), follow instructions in `user-data.sample` to config the registry mirror. This speed up to 2MB/s when I pull docker images.
+If you are in China, I strongly suggest take a look at [专享Docker加速器daocloud.io](https://www.daocloud.io/account/signup?invite=aa1c067a), follow instructions in `user-data.sample` to config the registry mirror. This speed up to 2MB/s when I pull docker images.
 
 ## Streamlined setup
 
