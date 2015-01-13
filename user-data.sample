@@ -1,5 +1,14 @@
 #cloud-config
 
+write_files:
+  - path: /etc/systemd/system/docker.service.d/50-registry.conf
+    owner: core:core
+    permissions: 0644
+    content: |
+      [Service]
+      # suggest using http://daocloud.io as your docker registry mirror
+      Environment="DOCKER_OPTS=--registry-mirror http://<YourDaoCloud>"
+
 coreos:
   etcd:
     # generate a new token for each unique cluster from https://discovery.etcd.io/new
