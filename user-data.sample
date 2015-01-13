@@ -7,7 +7,7 @@ write_files:
     content: |
       [Service]
       # suggest using http://daocloud.io as your docker registry mirror
-      Environment="DOCKER_OPTS=--registry-mirror http://<YourDaoCloud>"
+      Environment="DOCKER_OPTS=--registry-mirror=http://<YourDaoCloud>"
 
 coreos:
   etcd:
